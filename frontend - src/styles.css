@@ -1,0 +1,188 @@
+/* You can add global styles to this file, and also import other style files */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+.centar{
+    margin: 10px auto;
+    background-color: mediumblue;
+    padding: 10px;
+    border-radius: 1.5em;
+    border: groove white;
+}
+
+.centar td{
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 10px 5px 10px;
+}
+
+.greska{
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 121, 121);
+}
+.greska2{
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(255, 0, 0);
+}
+
+button{
+    background-color: white;
+    color: blue;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-color: blue;
+    padding: 0.2em 0.5em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+
+input{
+    background-color: white;
+    color: blue;
+    border-color: deepskyblue;
+    font-size: 1.2em;
+    border-radius: .3em;
+}
+select{
+    background-color: white;
+    color: blue;
+    border-color: deepskyblue;
+    font-size: 1.2em;
+    border-radius: .3em;
+}
+
+.centarb{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centarb:not(button):not(h2){
+    font-size: 1.5em;
+    color: white;
+}
+
+html{ height: 100%; margin: 0; padding: 0;}
+body { margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(60, 200, 255, 0.3); 
+    background-image: url('assets/nebo2.jpg');
+    background-size: cover;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.header1{
+    padding: 80px 0px 100px 0px;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    width: 30%;
+    margin: 0 auto;
+    border: 0;
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 2em;
+    color: blue;
+    padding: 10px 0px 10px 0px;
+    border: groove blue 6px;
+}
+
+.headerBackground{
+    background-image: url("assets/Pozadina2.jpg");
+    background-color: rgba(51, 180, 255, 0.3);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.meni{
+    background-color: blue;
+    font-size: 2em;
+    color: white;
+    padding: 10px 0px 10px 100px;
+    margin-bottom: 30px;
+}
+
+.meni2{
+    background-color: green;
+    font-size: 2em;
+    color: white;
+    padding: 10px 0px 10px 100px;
+    margin-bottom: 30px;
+}
+
+.meni3{
+    background-color: maroon;
+    font-size: 2em;
+    color: white;
+    padding: 10px 0px 10px 100px;
+    margin-bottom: 30px;
+}
+
+.meni4{
+    background-color: black;
+    font-size: 2em;
+    color: white;
+    padding: 10px 0px 10px 100px;
+    margin-bottom: 30px;
+}
+
+.link{
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.linkLogin{
+    color: royalblue;
+}
+.linkLogin:hover{
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ng-container{
+    color: blue;
+}
