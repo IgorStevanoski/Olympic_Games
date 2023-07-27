@@ -1,0 +1,57 @@
+<h2 class="centarb">Unos takmicenja</h2>
+<div>
+    <table class="centar">
+        <tr>
+            <td>Sport</td>
+            <td>
+                <select name='sport' [(ngModel)]='sport' (click)='azurirajDiscipline()'>
+                    <option value=""></option>
+                    <option *ngFor="let s of sportovi">{{s.ime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Disciplina:</td>
+            <td>
+                <select name='disciplina' [(ngModel)]='disciplina' (click)="azurirajTip()">
+                    <option value="/"></option>
+                    <option *ngFor="let d of discipline">{{d.disciplina}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Pol:</td>
+            <td>
+                <input type='radio' name='pol' [(ngModel)]='pol' value='muski'> M
+                <input type='radio' name='pol' [(ngModel)]='pol' value='zenski'> Ž
+            </td>
+        </tr>
+        <tr>
+            <td>Datum pocetka:</td>
+            <td>
+                <input type="date" name='datumPocetka' [(ngModel)]='datumPocetka' min={{danas}}>
+            </td>
+        </tr>
+        <tr>
+            <td>Lokacija:</td>
+            <td>
+                <select name='lokacija' [(ngModel)]='lokacija'>
+                    <option value=""></option>
+                    <option *ngFor="let l of lokacije">{{l.ime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tip:</td> 
+            <td> {{tip}} </td>
+<!--             <td>
+                <input type='radio' name='tip' [(ngModel)]='tip' value='ekipni'> ekipni
+                <input type='radio' name='tip' [(ngModel)]='tip' value='pojedinacni'> pojedinacni
+            </td> -->
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='unesi()'>Unesi</button>
+    <br>
+    <span style='color: red' class="centarb">{{greska}}</span>
+</div>

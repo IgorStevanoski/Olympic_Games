@@ -1,0 +1,47 @@
+<h2 class="centarb"> Zemlje ucesnice</h2>
+<!--<table class="centar" style="width: 40%">
+    <tr>
+        <th>Zastava</th>
+        <th>Ime</th>
+        <th>Broj sportista</th>
+    </tr>
+    <tr *ngFor='let z of zemlje'>
+        <td style="text-align: center;">
+            <img width='80px' height='48px' src='assets/{{z.ime}}.jpg'>
+        </td>
+        <td style="text-align: center;">{{z.ime}}</td>
+        <td style="text-align: center;">{{z.brojSportista}}</td>
+    </tr>
+</table>-->
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+      <!-- Position Column -->
+      <ng-container matColumnDef="zastava">
+        <th mat-header-cell *matHeaderCellDef> Zastava </th>
+        <td mat-cell *matCellDef="let element"> <img width='80px' height='48px' src="assets/{{element.ime}}.jpg" /> </td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="ime">
+        <th mat-header-cell *matHeaderCellDef> Ime </th>
+        <td mat-cell *matCellDef="let element"> {{element.ime}} </td>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="brojSportista">
+        <th mat-header-cell *matHeaderCellDef> Broj sportista </th>
+        <td mat-cell *matCellDef="let element"> {{element.brojSportista}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[10]"
+                   showFirstLastButtons 
+                   >
+    </mat-paginator>
+  </div>
+
+

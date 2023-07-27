@@ -1,0 +1,68 @@
+<h2 class="centarb"> Medalje</h2>
+<!--<table class="centar">
+    <tr>
+        <th>Rang </th>
+        <th>Zemlja</th>
+        <th>Broj zlatnih medalja &nbsp;</th>
+        <th>Broj srebrnih medalja &nbsp;</th>
+        <th>Broj bronzanih medalja &nbsp;</th>
+        <th>Ukupan broj medalja</th>
+    </tr>
+    <tr *ngFor='let z of zemlje; index as i; first as isFirst'>
+        <td style="text-align: center;">
+            {{i+1}}
+        </td>
+        <td style="text-align: center;">{{z.ime}}</td>
+        <td style="text-align: center;">{{z.zlatneMedalje}}</td>
+        <td style="text-align: center;">{{z.srebrneMedalje}}</td>
+        <td style="text-align: center;">{{z.bronzaneMedalje}}</td>
+        <td style="text-align: center;">{{z.bronzaneMedalje + z.srebrneMedalje + z.zlatneMedalje}}</td>
+    </tr>
+</table>-->
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+      <!-- Position Column -->
+      <ng-container matColumnDef="rang">
+        <th mat-header-cell *matHeaderCellDef> Rang </th>
+        <td mat-cell *matCellDef="let element; let i = index;"> {{i + 1 + (paginator.pageIndex * paginator.pageSize)}} </td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="zemlja">
+        <th mat-header-cell *matHeaderCellDef> Zemlja </th>
+        <td mat-cell *matCellDef="let element"> {{element.ime}} </td>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="zlato">
+        <th mat-header-cell *matHeaderCellDef> <img width='30px' height='30px' src="assets/PrvoMesto.jpg" /> </th>
+        <td mat-cell *matCellDef="let element"> {{element.zlatneMedalje}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="srebro">
+        <th mat-header-cell *matHeaderCellDef> <img width='30px' height='30px' src="assets/DrugoMesto.jpg" /> </th>
+        <td mat-cell *matCellDef="let element"> {{element.srebrneMedalje}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="bronza">
+        <th mat-header-cell *matHeaderCellDef> <img width='30px' height='30px' src="assets/TreceMesto.jpg" /> </th>
+        <td mat-cell *matCellDef="let element"> {{element.bronzaneMedalje}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ukupno">
+        <th mat-header-cell *matHeaderCellDef> Ukupno </th>
+        <td mat-cell *matCellDef="let element"> 
+            {{element.bronzaneMedalje + element.srebrneMedalje + element.zlatneMedalje}}
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[10]"
+                   showFirstLastButtons 
+                   >
+    </mat-paginator>
+  </div>

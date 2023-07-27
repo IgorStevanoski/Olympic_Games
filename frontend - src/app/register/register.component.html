@@ -1,0 +1,73 @@
+<h2 class="centarb">Registracija</h2>
+<table class="centar">
+    <tr>
+        <td>Korisnicko ime:</td>
+        <td>
+            <input type='text' name='kor_ime' [(ngModel)]='kor_ime' required='true'>
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka:</td>
+        <td>
+            <input type='text' name='lozinka' [(ngModel)]='lozinka'>
+        </td>
+        <td>
+            <span class="greska">{{greskaRegex}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka (ponovo):</td>
+        <td>
+            <input type='password' name='lozinkaProvera' [(ngModel)]='lozinkaProvera'>
+        </td>
+        <td>
+            <span class="greska">{{greskaLozinka}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>Ime:</td>
+        <td>
+            <input type='text' name='ime' [(ngModel)]='ime'>
+        </td>
+    </tr>
+    <tr>
+        <td>Prezime:</td>
+        <td>
+            <input type='text' name='prezime' [(ngModel)]='prezime'>
+        </td>
+    </tr>
+    <tr>
+        <td>Nacionalnost:</td>
+        <td>
+            <select name='nacionalnost' [(ngModel)]='nacionalnost'>
+                <option value=""></option>
+                <option *ngFor="let z of zemlje">{{z.ime}}</option>
+            </select>
+        </td>
+        <td>
+            <span class="greska">{{greskaZemlja}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>E-mail adresa:</td>
+        <td>
+            <input type='text' name='mejl' [(ngModel)]='mejl'>
+        </td>
+        <td>
+            <span class="greska">{{greskaMailRegex}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>Tip:</td>
+        <td>
+            <select name='tip' [(ngModel)]='tip'>
+                <option>delegat</option>
+                <option>vodja nacionalne delegacije</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<br>
+<button class="centarb" (click)='registruj()'>Registruj se</button>
+<span class="greska2">{{greska}}</span>
+<span style='color: green' class="centarb">{{uspeh}}</span>

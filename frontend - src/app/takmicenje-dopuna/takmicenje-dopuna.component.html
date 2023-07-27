@@ -1,0 +1,123 @@
+<h2 class="centarb">Takmicenje - sportisti i delegati</h2>
+
+<div>
+    <table class="centar">
+        <tr>
+            <td>Takmicenje:</td>
+            <td>
+                <select name='takmicenje' [(ngModel)]='takmicenje' (click)='ekipniIliPojedinacni()'>
+                    <option value=""> </option>
+                    <option *ngFor="let t of takmicenja">{{t.sport}} -{{t.disciplina}}</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+<div *ngIf='jeEkipni == true'>
+    <h3 class="centarb"> Unos ekipe </h3>
+    <table class="centar">
+        <tr>
+            <td>Ekipa:</td>
+            <td>
+                <select name='ekipa' [(ngModel)]='ekipa'>
+                    <option value=""> </option>
+                    <option *ngFor="let e of ekipe"> {{e.zemlja}} </option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='unesiEkipu()'> Unesite</button>
+    <br>
+</div>
+
+<br>
+
+<div *ngIf='jeEkipni != true'>
+    <h3 class="centarb"> Unos sportiste </h3>
+    <table class="centar">
+        <tr>
+            <td>Sportista:</td>
+            <td>
+                <select name='sportista' [(ngModel)]='sportista'>
+                    <option value=""></option>
+                    <option *ngFor="let s of sportisti"> {{s.ime}} {{s.prezime}} </option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='unesiSportistu()'> Unesite</button>
+    <br>
+</div>
+<br>
+<div>
+    <h3 class="centarb"> Unos delegata </h3>
+    <table class="centar">
+        <tr>
+            <td>Delegat:</td>
+            <td *ngIf="delegatPostojeci != ''">{{delegatPostojeci}}</td>
+            <td *ngIf="delegatPostojeci == ''">
+                <select name='delegat' [(ngModel)]='delegat'>
+                    <option value=""></option>
+                    <option *ngFor="let d of delegati"> {{d.ime}} {{d.prezime}} </option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" *ngIf="delegatPostojeci == ''" (click)='unesiDelegata()'> Unesite</button>
+    <br>
+</div>
+<br>
+<button class="centarb" (click)='zapocniTakmicenje()'> Zapocnite takmicenje</button>
+<br>
+<span style='color: red' class="centarb">{{greska}}</span>
+<br>
+
+<table class="centar">
+    <th style="color: white;"> Prijavljeni ucesnici:</th>
+    <tr *ngFor="let t of takmicari" style="color: white;">
+        - {{t.takmicar}}
+    </tr>
+</table>
+
+
+<!--         <tr>
+            <td>Pol:</td>
+            <td>
+                <input type='radio' name='pol' [(ngModel)]='pol' value='muski'> M
+                <input type='radio' name='pol' [(ngModel)]='pol' value='zenski'> Ž
+            </td>
+        </tr>
+        <tr>
+            <td>Datum pocetka:</td>
+            <td>
+                <input type="date" name='datumPocetka' [(ngModel)]='datumPocetka' min={{danas}}>
+            </td>
+        </tr>
+        <tr>
+            <td>Lokacija:</td>
+            <td>
+                <select name='lokacija' [(ngModel)]='lokacija'>
+                    <option value=""></option>
+                    <option *ngFor="let l of lokacije">{{l.ime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tip:</td>
+            <td>
+                <input type='radio' name='tip' [(ngModel)]='tip' value='ekipni'> ekipni
+                <input type='radio' name='tip' [(ngModel)]='tip' value='pojedinacni'> pojedinacni
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='unesi()'>Unesi</button>
+    <br>
+    <span style='color: red' class="centarb">{{greska}}</span>
+    </div> -->

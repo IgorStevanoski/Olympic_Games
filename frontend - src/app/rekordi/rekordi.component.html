@@ -1,0 +1,59 @@
+<h2 class="centarb"> Rekordi </h2>
+<!--<table class="centar" style="width: 40%">
+    <tr>
+        <th>Zastava</th>
+        <th>Ime</th>
+        <th>Broj sportista</th>
+    </tr>
+    <tr *ngFor='let z of zemlje'>
+        <td style="text-align: center;">
+            <img width='80px' height='48px' src='assets/{{z.ime}}.jpg'>
+        </td>
+        <td style="text-align: center;">{{z.ime}}</td>
+        <td style="text-align: center;">{{z.brojSportista}}</td>
+    </tr>
+</table>-->
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="disciplina">
+        <th mat-header-cell *matHeaderCellDef> Disciplina </th>
+        <td mat-cell *matCellDef="let element"> {{element.disciplina}} </td>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="rekord">
+        <th mat-header-cell *matHeaderCellDef> Rekord </th>
+        <td mat-cell *matCellDef="let element"> {{element.rekord}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="sportista">
+        <th mat-header-cell *matHeaderCellDef> Sportista </th>
+        <td mat-cell *matCellDef="let element"> {{element.sportista}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="zemlja">
+        <th mat-header-cell *matHeaderCellDef> Zemlja </th>
+        <td mat-cell *matCellDef="let element"> {{element.zemlja}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="mesto">
+        <th mat-header-cell *matHeaderCellDef> Mesto </th>
+        <td mat-cell *matCellDef="let element"> {{element.mesto}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="godina">
+        <th mat-header-cell *matHeaderCellDef> Godina </th>
+        <td mat-cell *matCellDef="let element"> {{element.godina}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[10, 20]"
+                   showFirstLastButtons 
+                   >
+    </mat-paginator>
+  </div>

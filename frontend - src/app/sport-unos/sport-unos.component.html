@@ -1,0 +1,48 @@
+<h2 class='centarb'>Unos sportske discipline</h2>
+
+<table class="centar">
+    <tr>
+        <td>Sport:</td>
+        <td>
+            <select name='sport' [(ngModel)]='sport' (click)='azurirajDiscipline()'>
+                <option value="">svi sportovi</option>
+                <option *ngFor="let s of sportovi">{{s.ime}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Disciplina:</td>
+        <td>
+            <select name='disciplina' [(ngModel)]='disciplina'>
+                <option value="/">sve sportske discipline</option>
+                <option *ngFor="let d of discipline">{{d.disciplina}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr *ngIf="tip == 'ekipni'">
+        <td>Minimalan broj clanova ekipe:</td>
+        <td>
+            <input type='number' name='min' [(ngModel)]='min' min="0" max="13">
+        </td>
+    </tr>
+    <tr *ngIf="tip == 'ekipni'">
+        <td>Maximalan broj clanova ekipe:</td>
+        <td>
+            <input type='number' name='max' [(ngModel)]='max' min="0" max="13">
+        </td>
+    </tr>
+    <tr (click)="resetujMinMax()">
+        <td>Tip:</td>
+        <td>
+            <input type='radio' name='tip' [(ngModel)]='tip' value='ekipni'> ekipni
+            <input type='radio' name='tip' [(ngModel)]='tip' value='pojedinacni'> pojedinacni
+        </td>
+    </tr>
+</table>
+<br>
+<div class="centarb">
+    <button (click)='unesiSport()'>Unesi sport</button>
+    <button (click)='unesiDisciplinu()'>Unesi disciplinu</button>
+</div>
+<br>
+<span style='color: red' class="centarb">{{greska}}</span>

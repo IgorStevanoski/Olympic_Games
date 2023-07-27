@@ -1,0 +1,42 @@
+<h2 class="centarb">Pregled sportista</h2>
+<div>
+    <table class="centar">
+        <tr>
+            <th>Sport:</th>
+        </tr>
+        <tr *ngFor="let s of sportovi" >
+            <td (click)="azurirajSport(s.ime)">
+                {{s.ime}}
+            </td>
+            <td>
+                [ {{s.broj}} ]
+            </td>
+        </tr>
+    </table>
+</div>
+<div *ngIf="discipline && !nemaDiscipline">
+    <table class="centar">
+        <tr>
+            <th>Disciplina:</th>
+        </tr>
+        <tr *ngFor="let d of discipline" >
+            <td (click)="dohvatiSportiste(d.disciplina)">
+                {{d.disciplina}}
+            </td>
+            <td>
+                [ {{d.broj}} ]
+            </td>
+        </tr>
+    </table>
+</div>
+<div *ngIf="disciplina != '/'">
+    <table class="centar">
+        <tr>
+            <th>Sportisti:</th>
+        </tr>
+        <tr *ngFor="let s of sportisti" >
+            <td>{{s.ime}}</td>
+            <td>{{s.prezime}}</td>
+        </tr>
+    </table>
+</div>

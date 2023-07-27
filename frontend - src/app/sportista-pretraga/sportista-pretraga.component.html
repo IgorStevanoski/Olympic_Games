@@ -1,0 +1,98 @@
+<h2 class="centarb">Pretraga sportista</h2>
+<div>
+    <table class="centar">
+        <tr>
+            <td>Ime i prezime:</td>
+            <td>
+                <input type='text' name='ime_prezime' [(ngModel)]='ime_prezime' required='true'>
+            </td>
+        </tr>
+        <tr>
+            <td>Zemlja:</td>
+            <td>
+                <select name='zemlja' [(ngModel)]='zemlja'>
+                    <option value="">sve zemlje</option>
+                    <option *ngFor="let z of zemlje">{{z.ime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Sport:</td>
+            <td>
+                <select name='sport' [(ngModel)]='sport' (click)='azurirajDiscipline()'>
+                    <option value="">svi sportovi</option>
+                    <option *ngFor="let s of sportovi">{{s.ime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Disciplina:</td>
+            <td>
+                <select name='disciplina' [(ngModel)]='disciplina'>
+                    <option value="">sve sportske discipline</option>
+                    <option *ngFor="let d of discipline">{{d.disciplina}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Pol:</td>
+            <td>
+                <input type='radio' name='pol' [(ngModel)]='pol' value='muski'> M
+                <input type='radio' name='pol' [(ngModel)]='pol' value='zenski'> Ž
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type='checkbox' name='medalja' [(ngModel)]='medalja'> samo osvajaci medalja
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='pretrazi()'>Pretrazi</button>
+    <br>
+</div>
+
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" style="width: 100%;">
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="ime i prezime">
+            <th mat-header-cell *matHeaderCellDef> Ime i prezime </th>
+            <td mat-cell *matCellDef="let element"> {{element.ime}} {{element.prezime}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="zemlja">
+            <th mat-header-cell *matHeaderCellDef> Zemlja </th>
+            <td mat-cell *matCellDef="let element"> {{element.zemlja}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="sport">
+            <th mat-header-cell *matHeaderCellDef> Sport </th>
+            <td mat-cell *matCellDef="let element"> {{element.sport}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="disciplina">
+            <th mat-header-cell *matHeaderCellDef> Sportska disciplina </th>
+            <td mat-cell *matCellDef="let element"> {{element.disciplina}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="pol">
+            <th mat-header-cell *matHeaderCellDef> Pol </th>
+            <td mat-cell *matCellDef="let element"> {{element.pol}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="medalja">
+            <th mat-header-cell *matHeaderCellDef> Medalja </th>
+            <td mat-cell *matCellDef="let element"> {{element.medalja}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[20, 50, 100]" showFirstLastButtons>
+    </mat-paginator>
+</div>

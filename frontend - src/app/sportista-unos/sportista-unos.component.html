@@ -1,0 +1,90 @@
+<h2 class="centarb">Unos sportista/ekipa</h2>
+
+<div>
+    <table class="centar">
+        <tr>
+            <td>Zemlja:</td>
+            <td> {{zemlja}} </td>
+        </tr>
+        <tr>
+            <td>Pol:</td>
+            <td (click)='dohvatiSportiste();'>
+                <input type='radio' name='pol' [(ngModel)]='pol' value='muski' > muski
+                <input type='radio' name='pol' [(ngModel)]='pol' value='zenski'> zenski
+            </td>
+        </tr>
+        <tr>
+            <td>Sport:</td>
+            <td>
+                <select name='sport' [(ngModel)]='sport' (click)='azurirajDiscipline()'>
+                    <option value=""> izaberite sport</option>
+                    <option *ngFor="let s of sportovi">{{s.ime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Disciplina:</td>
+            <td>
+                <select name='disciplina' [(ngModel)]='disciplina' (click)='dohvatiSportiste();'>
+                    <option value="/"> izaberite disciplinu</option>
+                    <option *ngFor="let d of discipline">{{d.disciplina}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> Tip:</td>
+            <td> {{tip}}</td>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+<h3 class="centarb plavo">Unesite sportistu</h3>
+<div>
+    <table class="centar">
+        <tr>
+            <td>Ime:</td>
+            <td>
+                <input type='text' name='ime' [(ngModel)]='ime'>
+            </td>
+        </tr>
+        <tr>
+            <td>Prezime:</td>
+            <td>
+                <input type='text' name='prezime' [(ngModel)]='prezime'>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='prijaviSportistu()'>Prijavite sportistu</button>
+    <br>
+
+</div>
+
+<br>
+
+<h3 class="centarb plavo">Unesite ekipu</h3>
+<div>
+    <table class="centar">
+        <tr>
+            <td> Sportisti: </td>
+            <td>
+                <select multiple name='sportistiZaUnos' [(ngModel)]='sportistiOdabrani'>
+                    <option *ngFor="let s of sportistiZaUnos">{{s.ime}} {{s.prezime}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> Min: {{min}} </td>
+            <td> Max: {{max}} </td>
+        </tr>
+    </table>
+    <br>
+    <button class="centarb" (click)='prijaviEkipu()'>Prijavite ekipu</button>
+    <br>
+</div>
+<span style='color: red' class="centarb">{{greska}}</span>
+
+
+<!-- <div *ngFor="let s of sportistiOdabrani">{{s}}</div> -->

@@ -1,0 +1,21 @@
+<h2>Prijava</h2>
+<table class="centar">
+    <tr>
+        <td>Korisnicko ime:</td>
+        <td>
+            <input type='text' name='kor_ime' [(ngModel)]='kor_ime'>
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka:</td>
+        <td>
+            <input type='password' name='lozinka' [(ngModel)]='lozinka'>
+        </td>
+    </tr>
+</table>
+<button class="centarb" (click)='prijava()'>Prijava</button>
+<div class="centarb">
+    Nemate nalog? &nbsp;
+    <a (click)='registracija()' class="linkLogin"> Registrujte se ovde.</a>
+</div>
+<span style='color: red' class="greska" *ngIf="greska!=''">{{greska}}</span>

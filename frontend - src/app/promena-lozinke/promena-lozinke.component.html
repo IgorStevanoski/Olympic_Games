@@ -1,0 +1,28 @@
+<h2 class="centarb">Promena lozinke</h2>
+<table class="centar">
+    <tr>
+        <td>Korisnicko ime:</td>
+        <td>
+            <input type='text' name='kor_ime' [(ngModel)]='kor_ime'>
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka:</td>
+        <td>
+            <input type='password' name='lozinka' [(ngModel)]='lozinka'>
+        </td>
+    </tr>
+    <tr>
+        <td>Nova Lozinka:</td>
+        <td>
+            <input type='password' name='lozinkaNova' [(ngModel)]='lozinkaNova'>
+        </td>
+        <td>
+            <span style='color: red' class="centarb">{{greskaLozinkaNova}}</span>
+        </td>
+    </tr>
+</table>
+<br>
+<button class="centarb" (click)='promeniSifru()'> Promeni </button>
+<br>
+<span style='color: red' class="centarb">{{greska}}</span>

@@ -1,0 +1,77 @@
+<h2 class='centarb'>Raspored</h2>
+
+<table class="centar">
+    <tr>
+        <td>Takmicenje:</td>
+        <td>
+            <select name='takmicenjeNaziv' [(ngModel)]='takmicenjeNaziv' (click)="azurirajRaspored()">
+                <option value=""></option>
+                <option *ngFor="let t of takmicenja">{{t.sport}} - {{t.disciplina}} - {{t.pol}}</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<br>
+<div>
+    <button class="centarb" (click)="unesiNoviRaspored()" *ngIf="!rasporedPostoji && takmicenjeNaziv != '' && !jeEkipni"> Novi raspored </button>
+</div>
+<br>
+<span *ngIf="jeEkipni" class="centarb"> Ekipni sportovi trenutno nisu podrzani.</span>
+<table class="centar" style="width: 80%;" *ngIf="desavanje">
+    <tr>
+        <th style="color: white;">Vreme pocetka:</th>
+        <th style="color: white;">Lokacija:</th>
+        <th style="color: white;">Ucesnici:</th>
+        <th style="color: white;">Rezultat:</th>
+        <th style="color: white;">Status:</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td style="text-align: center;" *ngIf="desavanje.vremePocetka!=''">{{desavanje.vremePocetka}}</td>
+        <td style="text-align: center;" *ngIf="desavanje.vremePocetka==''">
+            <input type='datetime-local' name='vremePocetka' [(ngModel)]='vremePocetka'>
+        </td>
+        <td style="text-align: center;">{{desavanje.lokacija}}</td>
+        <td>
+    <tr *ngFor="let t of desavanje.ucesnici" style="display: flex; justify-content: center;"> {{t.takmicar}}</tr>
+    </td>
+    <td *ngIf="rezultatiUneti">
+        <tr *ngFor="let t of desavanje.ucesnici" style="display: flex; justify-content: center;"> {{t.rezultat}}</tr>
+    </td>
+    <td *ngIf="!rezultatiUneti">
+        <tr *ngFor="let r of rezultati; let i = index" style="display: flex; justify-content: center;">
+            <td>
+                <input type="string" name="rez{{i}}" [(ngModel)]='rezultati[i]'>
+            </td>
+        </tr>
+    </td>
+    <td style="text-align: center;">{{desavanje.status}}</td>
+    <td>
+        <tr>
+            <button (click)='unosVremena()' *ngIf="desavanje.vremePocetka==''"> Unesite vreme pocetka</button>
+        </tr>
+        <tr *ngIf="!rezultatiUneti">
+            <button (click)='unosRezultata()' *ngIf="desavanje.vremePocetka!=''" > Unesite rezultate</button>
+        </tr>
+    </td>
+    </tr>
+</table>
+<br>
+<br>
+<table *ngIf="rezultatiUneti" class="centar">
+    <tr>
+        <td style="font-weight: bold;"> Prvo mesto:</td>
+        <td> {{pobednici[0].takmicar}} </td>
+        <td> {{pobednici[0].rezultat}} </td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;"> Drugo mesto:</td>
+        <td> {{pobednici[1].takmicar}} </td>
+        <td> {{pobednici[1].rezultat}} </td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;"> Trece mesto:</td>
+        <td> {{pobednici[2].takmicar}} </td>
+        <td> {{pobednici[2].rezultat}} </td>
+    </tr>
+</table>

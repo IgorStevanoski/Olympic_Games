@@ -1,0 +1,38 @@
+<h1 class="headerBackground" style="border-bottom: blue groove 5px;">
+  <a routerLink='welcome'>
+    <div class="header1" >
+      TOKYO 2021
+    </div> 
+  </a>
+</h1>
+<div class="meni"  *ngIf="tip == ''">
+  <a routerLink='login' class="link"> Prijava </a>|
+  <a routerLink='register'  class="link"> Registracija </a>|
+  <a routerLink='promenaLozinke'  class="link"> Promena lozinke </a>|
+  <a routerLink='zemlje'  class="link"> Zemlje </a>|
+  <a routerLink='medalje'  class="link"> Medalje </a>|
+  <a routerLink='sportisti'  class="link"> Sportisti </a>
+</div>
+
+<div class="meni"  *ngIf="tip == 'vodja nacionalne delegacije'">
+  <span (click)='logout()' class="link"> Odjavi se </span>|
+  <a routerLink='sportistiUnos' class="link">Unos sportista/ekipa </a>|
+  <a routerLink='sportistaPregled' class="link">Pregled sportista </a>
+</div>
+ 
+<div class="meni"  *ngIf="tip == 'organizator'"> 
+  <span (click)='logout()' class="link"> Odjavi se </span>|
+  <a routerLink='korisnickiZahtevi' class="link"> Korisnicki zahtevi </a>|
+  <a routerLink='sportUnos' class="link"> Unesite sport </a>|
+  <a routerLink='takmicenjeUnos' class="link">Unesite takmicenje </a>|
+  <a routerLink='takmicenjeDopuna' class="link">Popunite takmicenje </a>|
+  <a routerLink='rekordi' class="link">Rekordi </a>
+</div>
+
+<div class="meni"  *ngIf="tip == 'delegat'"> 
+  <span (click)='logout()' class="link"> Odjavi se </span>|
+  <a routerLink='raspored' class="link"> Raspored </a>
+</div>
+  <div>
+  <router-outlet></router-outlet>
+</div>

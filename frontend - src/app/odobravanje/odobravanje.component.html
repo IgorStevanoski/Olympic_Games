@@ -1,0 +1,55 @@
+<h2 class="centarb">Korisnicki zahtevi za registraciju</h2>
+<table class="centar">
+    <tr>
+        <td>Zahtev:</td>
+        <td>
+            <select name='kor_ime' [(ngModel)]='kor_ime' (click)='azurirajKorisnika()'>
+                <option></option>
+                <option *ngFor="let k of korisnickiZahtevi">{{k.kor_ime}}</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<table class="centar">
+    <tr>
+        <td>Korisnicko ime:</td>
+        <td>{{kor_ime}}</td>
+    </tr>
+    <tr>
+        <td>Lozinka:</td>
+        <td>{{lozinka}}</td>
+    </tr>
+    <tr>
+        <td>Ime:</td>
+        <td>{{ime}}</td>
+    </tr>
+    <tr>
+        <td>Prezime:</td>
+        <td>{{prezime}}</td>
+    </tr>
+    <tr>
+        <td>Nacionalnost:</td>
+        <td>{{zemlja}}</td>
+    </tr>
+    <tr>
+        <td>Email adresa:</td>
+        <td>{{mejl}}</td>
+    </tr>
+    <tr>
+        <td>Tip:</td>
+        <td>{{tip}}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+            <button class="centarb" (click)="odobri()" >Odobrite zahtev</button>
+        </td>
+        <td>
+            <button class="centarb" (click)="odbij()" >Odbijte zahtev</button>
+        </td>
+    </tr>
+</table>
+<br>
+<div class="centarb"> {{poruka}} </div>
