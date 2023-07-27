@@ -1,0 +1,30 @@
+{
+    "_id" : ObjectId("613b59c24ac7321c313fd3e6"),
+    "zemlja" : "Bugarska",
+    "sport" : "Kosarka",
+    "disciplina" : "",
+    "pol" : "muski",
+    "sportisti" : [ 
+        {
+            "sportista" : "Neko Nekov"
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("613c8c92bda29a393cddc346"),
+    "sportisti" : [ 
+        "Mile Milic", 
+        "igor Igorovic", 
+        "Janos Janosevic", 
+        "Rados Radosevic", 
+        "Milos Milosevic", 
+        "Milan Milanovic"
+    ],
+    "zemlja" : "Srbija",
+    "sport" : "Kosarka",
+    "disciplina" : "",
+    "pol" : "muski",
+    "__v" : 0
+}

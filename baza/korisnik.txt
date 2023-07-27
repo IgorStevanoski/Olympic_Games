@@ -1,0 +1,109 @@
+/* 1 */
+{
+    "_id" : ObjectId("6133a02b4ac7321c313f1d43"),
+    "kor_ime" : "pera",
+    "lozinka" : "pera123",
+    "ime" : "Petar",
+    "prezime" : "Petrovic",
+    "nacionalnost" : "Srbija",
+    "mejl" : "pera@gmail.com",
+    "tip" : "delegat",
+    "broj_takmicenja" : 3
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6134989b692cdf0680481db4"),
+    "kor_ime" : "mirko",
+    "lozinka" : "1234",
+    "ime" : "Mirko",
+    "prezime" : "Mirkov",
+    "nacionalnost" : "Bugarska",
+    "mejl" : "mirko@nesmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "broj_takmicenja" : 0,
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6134a404961dec3e6c363bcf"),
+    "kor_ime" : "milance",
+    "lozinka" : "milan123",
+    "ime" : "Milan",
+    "prezime" : "Milanovic",
+    "nacionalnost" : "Hrvatska",
+    "mejl" : "milan@gmail.com",
+    "tip" : "delegat",
+    "broj_takmicenja" : 3,
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6135038c4ac7321c313f44aa"),
+    "kor_ime" : "admin",
+    "lozinka" : "admin123",
+    "ime" : "Admin",
+    "prezime" : "Admin123",
+    "nacionalnost" : "Nebitno",
+    "mejl" : "admin@gmail.com",
+    "tip" : "organizator",
+    "broj_takmicenja" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("613c738320f6ef3d0858e47b"),
+    "kor_ime" : "zika",
+    "lozinka" : "1234",
+    "ime" : "Zivorad",
+    "prezime" : "Zivkovic",
+    "nacionalnost" : "Srbija",
+    "mejl" : "zika@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "broj_takmicenja" : 0,
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("613e293fdee5610e90b95283"),
+    "kor_ime" : "Laki",
+    "lozinka" : "LAki1234!a?",
+    "ime" : "Lazar",
+    "prezime" : "Lazarevic",
+    "nacionalnost" : "Srbija",
+    "mejl" : "laki@gmail.com",
+    "tip" : "delegat",
+    "broj_takmicenja" : 3,
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("613e5000c36cf43b288f6a30"),
+    "kor_ime" : "Majk",
+    "lozinka" : "Majk12!?AA2",
+    "ime" : "Mike",
+    "prezime" : "Tyson",
+    "nacionalnost" : "SAD",
+    "mejl" : "Majk@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "broj_takmicenja" : 0,
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("613e5094c36cf43b288f6a32"),
+    "kor_ime" : "Dzeljana",
+    "lozinka" : "ABC123!?abc",
+    "ime" : "Djelja",
+    "prezime" : "Nestovic",
+    "nacionalnost" : "Jamajka",
+    "mejl" : "fajos@dnwi.com",
+    "tip" : "delegat",
+    "broj_takmicenja" : 0,
+    "__v" : 0
+}

@@ -1,0 +1,175 @@
+/* 1 */
+{
+    "_id" : ObjectId("6140c6a96e5fb318e4ef1166"),
+    "takmicari" : [ 
+        {
+            "takmicar" : "Marko Markovic",
+            "rezultat" : "/"
+        }, 
+        {
+            "takmicar" : "Dzordz Dzej",
+            "rezultat" : "/"
+        }, 
+        {
+            "takmicar" : "Max Maxim",
+            "rezultat" : "/"
+        }, 
+        {
+            "takmicar" : "Jim Jimmy",
+            "rezultat" : "/"
+        }, 
+        {
+            "takmicar" : "Niko Nikovic",
+            "rezultat" : "/"
+        }, 
+        {
+            "takmicar" : "Nikola Nikolic",
+            "rezultat" : "/"
+        }
+    ],
+    "format" : [ 
+        {
+            "brojKrugova" : 2,
+            "brojTakmicaraMAX" : 8,
+            "brojTakmicaraMIN" : 2,
+            "rezultat" : "ss,tt"
+        }
+    ],
+    "sport" : "Biciklizam",
+    "disciplina" : "drumska trka 225km",
+    "pol" : "muski",
+    "datumPocetka" : "2021-09-02",
+    "lokacija" : "Atletski stadion",
+    "tip" : "pojedinacni",
+    "delegat" : "",
+    "status" : "zapoceto",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6140d1316e5fb318e4ef1176"),
+    "takmicari" : [ 
+        {
+            "takmicar" : "Rajko Rajic",
+            "rezultat" : "/"
+        }
+    ],
+    "format" : [ 
+        {
+            "brojKrugova" : 2,
+            "brojTakmicaraMAX" : 8,
+            "brojTakmicaraMIN" : 2,
+            "rezultat" : "ss,tt"
+        }
+    ],
+    "sport" : "Plivanje",
+    "disciplina" : "100m leptir",
+    "pol" : "muski",
+    "datumPocetka" : "2021-09-02",
+    "lokacija" : "bazen",
+    "tip" : "pojedinacni",
+    "delegat" : "Petar Petrovic",
+    "status" : "zapoceto",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6140d1b56e5fb318e4ef1178"),
+    "takmicari" : [],
+    "format" : [ 
+        {
+            "brojKrugova" : 2,
+            "brojTakmicaraMAX" : 8,
+            "brojTakmicaraMIN" : 2,
+            "rezultat" : "ss,tt"
+        }
+    ],
+    "sport" : "Odbojka",
+    "disciplina" : "",
+    "pol" : "muski",
+    "datumPocetka" : "2021-09-02",
+    "lokacija" : "Olimpijski stadion",
+    "tip" : "ekipni",
+    "delegat" : "Milan Milanovic",
+    "status" : "formirano",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6140d9e40809cb272cf10352"),
+    "takmicari" : [],
+    "format" : [ 
+        {
+            "brojKrugova" : 2,
+            "brojTakmicaraMAX" : 8,
+            "brojTakmicaraMIN" : 2,
+            "rezultat" : "ss,tt"
+        }
+    ],
+    "sport" : "Tenis",
+    "disciplina" : "singl",
+    "pol" : "muski",
+    "datumPocetka" : "2021-09-02",
+    "lokacija" : "Olimpijski stadion",
+    "delegat" : "Milan Milanovic",
+    "status" : "formirano",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6140da1d0809cb272cf10354"),
+    "takmicari" : [],
+    "format" : [ 
+        {
+            "brojKrugova" : 2,
+            "brojTakmicaraMAX" : 8,
+            "brojTakmicaraMIN" : 2,
+            "rezultat" : "ss,tt"
+        }
+    ],
+    "sport" : "Atletika",
+    "disciplina" : "400 metara trcanje",
+    "pol" : "muski",
+    "datumPocetka" : "2021-09-02",
+    "lokacija" : "Olimpijski stadion",
+    "tip" : "pojedinacni",
+    "delegat" : "Petar Petrovic",
+    "status" : "formirano",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6140dacd0809cb272cf10356"),
+    "takmicari" : [ 
+        {
+            "takmicar" : "Srbija",
+            "rezultat" : "/"
+        }, 
+        {
+            "takmicar" : "Bugarska",
+            "rezultat" : "/"
+        }
+    ],
+    "format" : [ 
+        {
+            "brojKrugova" : 2,
+            "brojTakmicaraMAX" : 8,
+            "brojTakmicaraMIN" : 2,
+            "rezultat" : "ss,tt"
+        }
+    ],
+    "sport" : "Kosarka",
+    "disciplina" : "",
+    "pol" : "muski",
+    "datumPocetka" : "2021-09-02",
+    "lokacija" : "Atletski stadion",
+    "tip" : "ekipni",
+    "delegat" : "Lazar Lazarevic",
+    "status" : "zapoceto",
+    "__v" : 0
+}

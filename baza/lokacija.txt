@@ -1,0 +1,29 @@
+/* 1 */
+{
+    "_id" : ObjectId("6139da384ac7321c313fb057"),
+    "ime" : "Olimpijski stadion"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6139da894ac7321c313fb07e"),
+    "ime" : "Atletski stadion"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6139da894ac7321c313fb081"),
+    "ime" : "bazen"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6139da894ac7321c313fb084"),
+    "ime" : "dvorana Tokio"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6139da894ac7321c313fb087"),
+    "ime" : "dvorana Saporo"
+}

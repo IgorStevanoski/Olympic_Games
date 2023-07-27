@@ -1,0 +1,186 @@
+/* 1 */
+{
+    "_id" : ObjectId("613b5c824ac7321c313fd58e"),
+    "godina" : "2012.",
+    "mesto" : "London",
+    "disciplina" : "100 metara trcanje",
+    "sportista" : "Jusejn Bolt",
+    "zemlja" : "Jamajka",
+    "rekord" : "9,63"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd664"),
+    "godina" : "2008.",
+    "mesto" : "Peking",
+    "disciplina" : "200 metara trcanje",
+    "sportista" : "Jusejn Bolt",
+    "zemlja" : "Jamajka",
+    "rekord" : "19,30"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd667"),
+    "godina" : "2016.",
+    "mesto" : "Rio de Žaneiro",
+    "disciplina" : "400 metara trcanje",
+    "sportista" : "Vejd Van Nikerk",
+    "zemlja" : "Juznoafricka Republika",
+    "rekord" : "43,03"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd66a"),
+    "godina" : "2012.",
+    "mesto" : "London",
+    "disciplina" : "800 metara trcanje",
+    "sportista" : "Dejvid Rudisa",
+    "zemlja" : "Kenija",
+    "rekord" : "1:40,91"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd66d"),
+    "godina" : "2008.",
+    "mesto" : "Peking",
+    "disciplina" : "5000 metara trcanje",
+    "sportista" : "Kenenisa Bekele",
+    "zemlja" : "Etiopija",
+    "rekord" : "12:57,82"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd670"),
+    "godina" : "2008.",
+    "mesto" : "Peking",
+    "disciplina" : "10000 metara trcanje",
+    "sportista" : "Kenenisa Bekele",
+    "zemlja" : "Etiopija",
+    "rekord" : "27:01,17"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd673"),
+    "godina" : "2021.",
+    "mesto" : "Tokio",
+    "disciplina" : "skok u vis",
+    "sportista" : "Carls Ostin",
+    "zemlja" : "SAD",
+    "rekord" : "2,39"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd676"),
+    "godina" : "1968.",
+    "mesto" : "Meksiko Siti",
+    "disciplina" : "skok u dalj",
+    "sportista" : "Bob Bimon",
+    "zemlja" : "SAD",
+    "rekord" : "8,90"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd679"),
+    "godina" : "1996.",
+    "mesto" : "Atlanta",
+    "disciplina" : "troskok",
+    "sportista" : "Keni Harison",
+    "zemlja" : "SAD",
+    "rekord" : "18,09"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd67c"),
+    "godina" : "2016.",
+    "mesto" : "Rio de Žaneiro",
+    "disciplina" : "skok s motkom",
+    "sportista" : "Tijago Braz da Silva",
+    "zemlja" : "Brazil",
+    "rekord" : "6,03"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd67f"),
+    "godina" : "1988.",
+    "mesto" : "Seul",
+    "disciplina" : "bacanje kugle",
+    "sportista" : "Ulf Timerman",
+    "zemlja" : "Nemacka",
+    "rekord" : "22,47"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd682"),
+    "godina" : "2004.",
+    "mesto" : "Atina",
+    "disciplina" : "bacanje diska",
+    "sportista" : "Virgilijus Alekna",
+    "zemlja" : "Litvanija",
+    "rekord" : "69,89"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd685"),
+    "godina" : "1988.",
+    "mesto" : "Seul",
+    "disciplina" : "bacanje kladiva",
+    "sportista" : "Sergej Litvinov",
+    "zemlja" : "Sovjetski Savez",
+    "rekord" : "84,80"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd688"),
+    "godina" : "2008.",
+    "mesto" : "Peking",
+    "disciplina" : "bacanje koplja",
+    "sportista" : "Anreas Torkildsen",
+    "zemlja" : "Norveska",
+    "rekord" : "90,57"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd68b"),
+    "godina" : "2008.",
+    "mesto" : "Peking",
+    "disciplina" : "maraton",
+    "sportista" : "Samjuel Kamau Vanjiru",
+    "zemlja" : "Kenija",
+    "rekord" : "2:06,32"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd68e"),
+    "godina" : "2012.",
+    "mesto" : "London",
+    "disciplina" : "20km brzo hodanje",
+    "sportista" : "Čen Ding",
+    "zemlja" : "Kina",
+    "rekord" : "1:18,46"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("613b5f0d4ac7321c313fd691"),
+    "godina" : "2012.",
+    "mesto" : "London",
+    "disciplina" : "50km brzo hodanje",
+    "sportista" : "Sergej Kirdjapkin",
+    "zemlja" : "Rusija",
+    "rekord" : "3:35,59"
+}

@@ -1,0 +1,64 @@
+{
+    "_id" : ObjectId("613e4a0fe8851d05281cbf11"),
+    "kor_ime" : "Igor",
+    "lozinka" : "IGor1234a!?",
+    "ime" : "Igor",
+    "prezime" : "Igorovic",
+    "nacionalnost" : "Bugarska",
+    "mejl" : "igor@mgail.com",
+    "tip" : "delegat",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("613e4c07e8851d05281cbf13"),
+    "kor_ime" : "Laki",
+    "lozinka" : "LAki1234!a?",
+    "ime" : "Lazar",
+    "prezime" : "Lazarevic",
+    "nacionalnost" : "Srbija",
+    "mejl" : "laki@gmail.com",
+    "tip" : "delegat",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("613e4e82e8851d05281cbf17"),
+    "kor_ime" : "Pike",
+    "lozinka" : "PAera123!?aa",
+    "ime" : "Pera",
+    "prezime" : "Peric",
+    "nacionalnost" : "Crna Gora",
+    "mejl" : "pera@mail.com",
+    "tip" : "delegat",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("613e4f3fc36cf43b288f6a2e"),
+    "kor_ime" : "Aca",
+    "lozinka" : "ACAaca123!?",
+    "ime" : "Aco",
+    "prezime" : "Acov",
+    "nacionalnost" : "Bugarska",
+    "mejl" : "aca@mail.com",
+    "tip" : "delegat",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("613e5653fe37d3384c883051"),
+    "kor_ime" : "Zoki",
+    "lozinka" : "ZOoki123!?",
+    "ime" : "Zoran",
+    "prezime" : "Zoranic",
+    "nacionalnost" : "Srbija",
+    "mejl" : "zoki@email.com",
+    "tip" : "vodja nacionalne delegacije",
+    "broj_takmicenja" : 0,
+    "__v" : 0
+}

@@ -1,0 +1,129 @@
+/* 1 */
+{
+    "_id" : ObjectId("6140d1606e5fb318e4ef1177"),
+    "desavanja" : [],
+    "takmicenje" : {
+        "takmicari" : [ 
+            {
+                "takmicar" : "Rajko Rajic",
+                "rezultat" : "/"
+            }
+        ],
+        "format" : [ 
+            {
+                "brojKrugova" : 2,
+                "brojTakmicaraMAX" : 8,
+                "brojTakmicaraMIN" : 2,
+                "rezultat" : "ss,tt"
+            }
+        ],
+        "_id" : "6140d1316e5fb318e4ef1176",
+        "sport" : "Plivanje",
+        "disciplina" : "100m leptir",
+        "pol" : "muski",
+        "datumPocetka" : "2021-09-02",
+        "lokacija" : "bazen",
+        "tip" : "pojedinacni",
+        "delegat" : "Petar Petrovic",
+        "status" : "zapoceto",
+        "__v" : 0
+    },
+    "desavanje" : {
+        "lokacija" : "bazen",
+        "brojKrugova" : 1,
+        "status" : "gotovo",
+        "ucesnici" : [ 
+            {
+                "takmicar" : "Rajko Rajic",
+                "rezultat" : "123"
+            }
+        ],
+        "vremePocetka" : "2021-09-14 18:44"
+    },
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("614f2f9b1bc92c21e00c4497"),
+    "desavanja" : [],
+    "takmicenje" : {
+        "takmicari" : [ 
+            {
+                "takmicar" : "Marko Markovic",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Dzordz Dzej",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Max Maxim",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Jim Jimmy",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Niko Nikovic",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Nikola Nikolic",
+                "rezultat" : "/"
+            }
+        ],
+        "format" : [ 
+            {
+                "brojKrugova" : 2,
+                "brojTakmicaraMAX" : 8,
+                "brojTakmicaraMIN" : 2,
+                "rezultat" : "ss,tt"
+            }
+        ],
+        "_id" : "6140c6a96e5fb318e4ef1166",
+        "sport" : "Biciklizam",
+        "disciplina" : "drumska trka 225km",
+        "pol" : "muski",
+        "datumPocetka" : "2021-09-02",
+        "lokacija" : "Atletski stadion",
+        "tip" : "pojedinacni",
+        "delegat" : "",
+        "status" : "zapoceto",
+        "__v" : 0
+    },
+    "desavanje" : {
+        "lokacija" : "Atletski stadion",
+        "brojKrugova" : 1,
+        "status" : "u toku",
+        "ucesnici" : [ 
+            {
+                "takmicar" : "Marko Markovic",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Dzordz Dzej",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Max Maxim",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Jim Jimmy",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Niko Nikovic",
+                "rezultat" : "/"
+            }, 
+            {
+                "takmicar" : "Nikola Nikolic",
+                "rezultat" : "/"
+            }
+        ],
+        "vremePocetka" : "2021-09-23 16:20"
+    },
+    "__v" : 0
+}

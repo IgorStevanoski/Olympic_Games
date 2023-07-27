@@ -1,0 +1,153 @@
+/* 1 */
+{
+    "_id" : ObjectId("61379d674ac7321c313f71e1"),
+    "ime" : "Plivanje",
+    "discipline" : [ 
+        {
+            "disciplina" : "100m leptir"
+        }, 
+        {
+            "disciplina" : "200m slobodno"
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("61379f7e4ac7321c313f72a4"),
+    "ime" : "Kosarka",
+    "discipline" : [ 
+        {
+            "disciplina" : ""
+        }
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6137a4ee4ac7321c313f74d1"),
+    "ime" : "Atletika",
+    "discipline" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }, 
+        {
+            "disciplina" : "stafetno trcanje 100"
+        }, 
+        {
+            "disciplina" : "200 metara trcanje"
+        }, 
+        {
+            "disciplina" : "400 metara trcanje"
+        }, 
+        {
+            "disciplina" : "stafetno trcanje 400"
+        }, 
+        {
+            "disciplina" : "800 metara trcanje"
+        }, 
+        {
+            "disciplina" : "5000 metara trcanje"
+        }, 
+        {
+            "disciplina" : "10000 metara trcanje"
+        }, 
+        {
+            "disciplina" : "skok u vis"
+        }, 
+        {
+            "disciplina" : "skok u dalj"
+        }, 
+        {
+            "disciplina" : "troskok"
+        }, 
+        {
+            "disciplina" : "skok s motkom"
+        }, 
+        {
+            "disciplina" : "bacanje kugle"
+        }, 
+        {
+            "disciplina" : "bacanje diska"
+        }, 
+        {
+            "disciplina" : "bacanje kladiva"
+        }, 
+        {
+            "disciplina" : "bacanje koplja"
+        }, 
+        {
+            "disciplina" : "maraton"
+        }, 
+        {
+            "disciplina" : "20km brzo hodanje"
+        }, 
+        {
+            "disciplina" : "50km brzo hodanje"
+        }
+    ]
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6137a6f44ac7321c313f7587"),
+    "ime" : "Biciklizam",
+    "discipline" : [ 
+        {
+            "disciplina" : "drumska trka 225km"
+        }
+    ]
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6137a6f44ac7321c313f758a"),
+    "ime" : "Streljastvo",
+    "discipline" : [ 
+        {
+            "disciplina" : "50m trostav"
+        }, 
+        {
+            "disciplina" : "10m vazdusna puska"
+        }, 
+        {
+            "disciplina" : "10m vazdusni pistolj"
+        }
+    ]
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6137a6f44ac7321c313f758d"),
+    "ime" : "Tenis",
+    "discipline" : [ 
+        {
+            "disciplina" : "singl"
+        }, 
+        {
+            "disciplina" : "dubl"
+        }
+    ]
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("6137a7594ac7321c313f75c9"),
+    "ime" : "Odbojka",
+    "discipline" : [ 
+        {
+            "disciplina" : ""
+        }
+    ]
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("6137a7594ac7321c313f75cc"),
+    "ime" : "Vaterpolo",
+    "discipline" : [ 
+        {
+            "disciplina" : ""
+        }
+    ]
+}

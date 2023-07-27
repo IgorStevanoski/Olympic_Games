@@ -1,0 +1,130 @@
+/* 1 */
+{
+    "_id" : ObjectId("6138beae4ac7321c313f90ac"),
+    "ime" : "Plivanje",
+    "discipline" : [ 
+        {
+            "disciplina" : "100m leptir",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }, 
+        {
+            "disciplina" : "200m slobodno",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6138ebd78f55d34264b30515"),
+    "discipline" : [ 
+        {
+            "disciplina" : "drumska trka 225km",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }
+    ],
+    "ime" : "Biciklizam",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6138ec898f55d34264b30517"),
+    "discipline" : [ 
+        {
+            "disciplina" : ""
+        }
+    ],
+    "ime" : "Vaterpolo",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6138ecb68f55d34264b30518"),
+    "discipline" : [ 
+        {
+            "disciplina" : "singl"
+        }, 
+        {
+            "disciplina" : "dubl"
+        }
+    ],
+    "ime" : "Tenis",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("613c7c61cb063034a05d35d1"),
+    "discipline" : [ 
+        {
+            "disciplina" : "",
+            "min" : 6,
+            "max" : 12,
+            "tip" : "ekipni"
+        }
+    ],
+    "ime" : "Odbojka",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("613c82e1cb063034a05d35d2"),
+    "discipline" : [ 
+        {
+            "disciplina" : "",
+            "min" : 6,
+            "max" : 12,
+            "tip" : "ekipni"
+        }
+    ],
+    "ime" : "Kosarka",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("613ddb88438d0d284473dc09"),
+    "discipline" : [ 
+        {
+            "disciplina" : "100 metara trcanje",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }, 
+        {
+            "disciplina" : "stafetno trcanje 100",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }, 
+        {
+            "disciplina" : "200 metara trcanje",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }, 
+        {
+            "disciplina" : "400 metara trcanje",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }, 
+        {
+            "disciplina" : "stafetno trcanje 400",
+            "min" : 1,
+            "max" : 1,
+            "tip" : "pojedinacni"
+        }
+    ],
+    "ime" : "Atletika",
+    "__v" : 0
+}
